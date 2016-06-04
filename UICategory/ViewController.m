@@ -58,6 +58,9 @@
     
     /* sub label,now just suport UIKit */
     self.subLabel.pdc_manager.backgroundColor([UIColor redColor]);  //nothing to do
+    
+    /* btn title */
+    self.btn.pdc_manager.bt_title(@"this is button title",UIControlStateNormal);
 }
 
 @end

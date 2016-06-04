@@ -168,6 +168,77 @@
     return _backgroundColor;
 }
 
+-(pdc_bool )clipsToBounds
+{
+    __block typeof(self) weakself = self;
+    _clipsToBounds = ^PDCPropertyManager *(BOOL clipsToBounds){
+        weakself.temp.clipsToBounds = clipsToBounds;
+        return weakself;
+    };
+    return _clipsToBounds;
+}
+
+
+-(pdc_bool )hidden
+{
+    __block typeof(self) weakself = self;
+    _hidden = ^PDCPropertyManager *(BOOL hidden){
+        weakself.temp.hidden = hidden;
+        return weakself;
+    };
+    return _hidden;
+}
+
+-(pdc_bool )opaque
+{
+    __block typeof(self) weakself = self;
+    _opaque = ^PDCPropertyManager *(BOOL opaque){
+        weakself.temp.opaque = opaque;
+        return weakself;
+    };
+    return _opaque;
+}
+
+-(pdc_bool )clearsContextBeforeDrawing
+{
+    __block typeof(self) weakself = self;
+    _clearsContextBeforeDrawing = ^PDCPropertyManager *(BOOL clearsContextBeforeDrawing){
+        weakself.temp.clearsContextBeforeDrawing = clearsContextBeforeDrawing;
+        return weakself;
+    };
+    return _clearsContextBeforeDrawing;
+}
+
+-(pdc_float )alpha
+{
+    __block typeof(self) weakself = self;
+    _alpha = ^PDCPropertyManager *(CGFloat alpha){
+        weakself.temp.alpha = alpha;
+        return weakself;
+    };
+    return _alpha;
+}
+
+-(pdc_color )tintColor
+{
+    __block typeof(self) weakself = self;
+    _tintColor = ^PDCPropertyManager *(UIColor *tintColor){
+        weakself.temp.tintColor = tintColor;
+        return weakself;
+    };
+    return _tintColor;
+}
+
+-(pdc_tintAdjustmentMode )tintAdjustmentMode
+{
+    __block typeof(self) weakself = self;
+    _tintAdjustmentMode = ^PDCPropertyManager *(UIViewTintAdjustmentMode tintAdjustmentMode){
+        weakself.temp.tintAdjustmentMode = tintAdjustmentMode;
+        return weakself;
+    };
+    return _tintAdjustmentMode;
+}
+
 -(pdc_bool )userInteractionEnabled
 {
     __block typeof(self) weakself = self;
@@ -178,7 +249,99 @@
     return _userInteractionEnabled;
 }
 
+-(pdc_view )addSubView
+{
+    __block typeof(self) weakself = self;
+    _addSubView = ^PDCPropertyManager *(UIView *subView){
+        [weakself.temp addSubview:subView];
+        return weakself;
+    };
+    return _addSubView;
+}
+
+-(pdc_edgeInsets )layoutMargins
+{
+    __block typeof(self) weakself = self;
+    _layoutMargins = ^PDCPropertyManager *(UIEdgeInsets layoutMargins){
+        weakself.temp.layoutMargins = layoutMargins;
+        return weakself;
+    };
+    return _layoutMargins;
+}
+
+
+
+
 #pragma mark - button
+-(pdc_edgeInsets )contentEdgeInsets
+{
+    __block typeof(self) weakself = self;
+    _contentEdgeInsets = ^PDCPropertyManager *(UIEdgeInsets contentEdgeInsets){
+        weakself.pdc_button.contentEdgeInsets = contentEdgeInsets;
+        return weakself;
+    };
+    return _contentEdgeInsets;
+}
+
+-(pdc_edgeInsets )titleEdgeInsets
+{
+    __block typeof(self) weakself = self;
+    _titleEdgeInsets = ^PDCPropertyManager *(UIEdgeInsets titleEdgeInsets){
+        weakself.pdc_button.titleEdgeInsets = titleEdgeInsets;
+        return weakself;
+    };
+    return _titleEdgeInsets;
+}
+
+-(pdc_edgeInsets )imageEdgeInsets
+{
+    __block typeof(self) weakself = self;
+    _imageEdgeInsets = ^PDCPropertyManager *(UIEdgeInsets imageEdgeInsets){
+        weakself.pdc_button.imageEdgeInsets = imageEdgeInsets;
+        return weakself;
+    };
+    return _imageEdgeInsets;
+}
+
+-(pdc_bool )reversesTitleShadowWhenHighlighted
+{
+    __block typeof(self) weakself = self;
+    _reversesTitleShadowWhenHighlighted = ^PDCPropertyManager *(BOOL reversesTitleShadowWhenHighlighted){
+        weakself.pdc_button.reversesTitleShadowWhenHighlighted = reversesTitleShadowWhenHighlighted;
+        return weakself;
+    };
+    return _reversesTitleShadowWhenHighlighted;
+}
+
+-(pdc_bool )adjustsImageWhenHighlighted
+{
+    __block typeof(self) weakself = self;
+    _adjustsImageWhenHighlighted = ^PDCPropertyManager *(BOOL adjustsImageWhenHighlighted){
+        weakself.pdc_button.adjustsImageWhenHighlighted = adjustsImageWhenHighlighted;
+        return weakself;
+    };
+    return _adjustsImageWhenHighlighted;
+}
+
+-(pdc_bool )adjustsImageWhenDisabled
+{
+    __block typeof(self) weakself = self;
+    _adjustsImageWhenDisabled = ^PDCPropertyManager *(BOOL adjustsImageWhenDisabled){
+        weakself.pdc_button.adjustsImageWhenDisabled = adjustsImageWhenDisabled;
+        return weakself;
+    };
+    return _adjustsImageWhenDisabled;
+}
+
+-(pdc_bool )showsTouchWhenHighlighted
+{
+    __block typeof(self) weakself = self;
+    _showsTouchWhenHighlighted = ^PDCPropertyManager *(BOOL showsTouchWhenHighlighted){
+        weakself.pdc_button.showsTouchWhenHighlighted = showsTouchWhenHighlighted;
+        return weakself;
+    };
+    return _showsTouchWhenHighlighted;
+}
 
 -(pdc_bt_text )bt_title
 {
@@ -190,6 +353,17 @@
     return _bt_title;
 }
 
+-(pdc_string )bt_titleLabel
+{
+    __block typeof(self) weakself = self;
+    _bt_titleLabel = ^PDCPropertyManager *(NSString *title){
+        weakself.pdc_button.titleLabel.text = title;
+        return weakself;
+    };
+    return _bt_titleLabel;
+}
+
+
 #pragma mark - label
 -(pdc_string )lb_text
 {
@@ -200,6 +374,8 @@
     };
     return _lb_text;
 }
+
+
 
 #pragma mark - textField
 @end
