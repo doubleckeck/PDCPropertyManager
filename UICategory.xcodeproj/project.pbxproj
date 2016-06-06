@@ -22,6 +22,22 @@
 		EAF646691D051CAD006B59BD /* PDCPropertyManager+UIImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF646681D051CAD006B59BD /* PDCPropertyManager+UIImageView.m */; };
 		EAF6466C1D051F1B006B59BD /* PDCPropertyManager+UILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF6466B1D051F1B006B59BD /* PDCPropertyManager+UILabel.m */; };
 		EAF6466F1D051F2E006B59BD /* PDCPropertyManager+UIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF6466E1D051F2E006B59BD /* PDCPropertyManager+UIButton.m */; };
+		EAF646721D054DE8006B59BD /* PDCPropertyManager+UITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF646711D054DE8006B59BD /* PDCPropertyManager+UITextField.m */; };
+		EAF646751D055788006B59BD /* PDCPropertyManager+UITextView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF646741D055788006B59BD /* PDCPropertyManager+UITextView.m */; };
+		EAF646781D055796006B59BD /* PDCPropertyManager+UIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF646771D055796006B59BD /* PDCPropertyManager+UIScrollView.m */; };
+		EAF6467E1D0557B4006B59BD /* PDCPropertyManager+UITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF6467D1D0557B4006B59BD /* PDCPropertyManager+UITableView.m */; };
+		EAF646811D055A83006B59BD /* PDCPropertyManager+Other.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF646801D055A83006B59BD /* PDCPropertyManager+Other.m */; };
+		EAF646841D056C24006B59BD /* PDCPropertyManager+UITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF646831D056C24006B59BD /* PDCPropertyManager+UITableViewCell.m */; };
+		EAF646871D056C2F006B59BD /* PDCPropertyManager+UICollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF646861D056C2F006B59BD /* PDCPropertyManager+UICollectionView.m */; };
+		EAF6468A1D056C48006B59BD /* PDCPropertyManager+UICollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF646891D056C48006B59BD /* PDCPropertyManager+UICollectionViewCell.m */; };
+		EAF6468D1D056C59006B59BD /* PDCPropertyManager+UIWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF6468C1D056C59006B59BD /* PDCPropertyManager+UIWebView.m */; };
+		EAF646901D056C66006B59BD /* PDCPropertyManager+UISwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF6468F1D056C66006B59BD /* PDCPropertyManager+UISwitch.m */; };
+		EAF646931D056CB7006B59BD /* PDCPropertyManager+UIProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF646921D056CB7006B59BD /* PDCPropertyManager+UIProgressView.m */; };
+		EAF646961D056CD0006B59BD /* PDCPropertyManager+UISlider.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF646951D056CD0006B59BD /* PDCPropertyManager+UISlider.m */; };
+		EAF646991D056CE9006B59BD /* PDCPropertyManager+UISegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF646981D056CE9006B59BD /* PDCPropertyManager+UISegmentedControl.m */; };
+		EAF6469C1D056CFC006B59BD /* PDCPropertyManager+UIStepper.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF6469B1D056CFC006B59BD /* PDCPropertyManager+UIStepper.m */; };
+		EAF6469F1D056D0D006B59BD /* PDCPropertyManager+UIDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF6469E1D056D0D006B59BD /* PDCPropertyManager+UIDatePicker.m */; };
+		EAF646A21D056D27006B59BD /* PDCPropertyManager+UIStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF646A11D056D27006B59BD /* PDCPropertyManager+UIStackView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +87,38 @@
 		EAF6466B1D051F1B006B59BD /* PDCPropertyManager+UILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PDCPropertyManager+UILabel.m"; sourceTree = "<group>"; };
 		EAF6466D1D051F2E006B59BD /* PDCPropertyManager+UIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PDCPropertyManager+UIButton.h"; sourceTree = "<group>"; };
 		EAF6466E1D051F2E006B59BD /* PDCPropertyManager+UIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PDCPropertyManager+UIButton.m"; sourceTree = "<group>"; };
+		EAF646701D054DE8006B59BD /* PDCPropertyManager+UITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PDCPropertyManager+UITextField.h"; sourceTree = "<group>"; };
+		EAF646711D054DE8006B59BD /* PDCPropertyManager+UITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PDCPropertyManager+UITextField.m"; sourceTree = "<group>"; };
+		EAF646731D055788006B59BD /* PDCPropertyManager+UITextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PDCPropertyManager+UITextView.h"; sourceTree = "<group>"; };
+		EAF646741D055788006B59BD /* PDCPropertyManager+UITextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PDCPropertyManager+UITextView.m"; sourceTree = "<group>"; };
+		EAF646761D055796006B59BD /* PDCPropertyManager+UIScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PDCPropertyManager+UIScrollView.h"; sourceTree = "<group>"; };
+		EAF646771D055796006B59BD /* PDCPropertyManager+UIScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PDCPropertyManager+UIScrollView.m"; sourceTree = "<group>"; };
+		EAF6467C1D0557B3006B59BD /* PDCPropertyManager+UITableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PDCPropertyManager+UITableView.h"; sourceTree = "<group>"; };
+		EAF6467D1D0557B4006B59BD /* PDCPropertyManager+UITableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PDCPropertyManager+UITableView.m"; sourceTree = "<group>"; };
+		EAF6467F1D055A83006B59BD /* PDCPropertyManager+Other.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PDCPropertyManager+Other.h"; sourceTree = "<group>"; };
+		EAF646801D055A83006B59BD /* PDCPropertyManager+Other.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PDCPropertyManager+Other.m"; sourceTree = "<group>"; };
+		EAF646821D056C24006B59BD /* PDCPropertyManager+UITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PDCPropertyManager+UITableViewCell.h"; sourceTree = "<group>"; };
+		EAF646831D056C24006B59BD /* PDCPropertyManager+UITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PDCPropertyManager+UITableViewCell.m"; sourceTree = "<group>"; };
+		EAF646851D056C2F006B59BD /* PDCPropertyManager+UICollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PDCPropertyManager+UICollectionView.h"; sourceTree = "<group>"; };
+		EAF646861D056C2F006B59BD /* PDCPropertyManager+UICollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PDCPropertyManager+UICollectionView.m"; sourceTree = "<group>"; };
+		EAF646881D056C48006B59BD /* PDCPropertyManager+UICollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PDCPropertyManager+UICollectionViewCell.h"; sourceTree = "<group>"; };
+		EAF646891D056C48006B59BD /* PDCPropertyManager+UICollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PDCPropertyManager+UICollectionViewCell.m"; sourceTree = "<group>"; };
+		EAF6468B1D056C59006B59BD /* PDCPropertyManager+UIWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PDCPropertyManager+UIWebView.h"; sourceTree = "<group>"; };
+		EAF6468C1D056C59006B59BD /* PDCPropertyManager+UIWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PDCPropertyManager+UIWebView.m"; sourceTree = "<group>"; };
+		EAF6468E1D056C66006B59BD /* PDCPropertyManager+UISwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PDCPropertyManager+UISwitch.h"; sourceTree = "<group>"; };
+		EAF6468F1D056C66006B59BD /* PDCPropertyManager+UISwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PDCPropertyManager+UISwitch.m"; sourceTree = "<group>"; };
+		EAF646911D056CB7006B59BD /* PDCPropertyManager+UIProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PDCPropertyManager+UIProgressView.h"; sourceTree = "<group>"; };
+		EAF646921D056CB7006B59BD /* PDCPropertyManager+UIProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PDCPropertyManager+UIProgressView.m"; sourceTree = "<group>"; };
+		EAF646941D056CD0006B59BD /* PDCPropertyManager+UISlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PDCPropertyManager+UISlider.h"; sourceTree = "<group>"; };
+		EAF646951D056CD0006B59BD /* PDCPropertyManager+UISlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PDCPropertyManager+UISlider.m"; sourceTree = "<group>"; };
+		EAF646971D056CE9006B59BD /* PDCPropertyManager+UISegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PDCPropertyManager+UISegmentedControl.h"; sourceTree = "<group>"; };
+		EAF646981D056CE9006B59BD /* PDCPropertyManager+UISegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PDCPropertyManager+UISegmentedControl.m"; sourceTree = "<group>"; };
+		EAF6469A1D056CFC006B59BD /* PDCPropertyManager+UIStepper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PDCPropertyManager+UIStepper.h"; sourceTree = "<group>"; };
+		EAF6469B1D056CFC006B59BD /* PDCPropertyManager+UIStepper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PDCPropertyManager+UIStepper.m"; sourceTree = "<group>"; };
+		EAF6469D1D056D0D006B59BD /* PDCPropertyManager+UIDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PDCPropertyManager+UIDatePicker.h"; sourceTree = "<group>"; };
+		EAF6469E1D056D0D006B59BD /* PDCPropertyManager+UIDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PDCPropertyManager+UIDatePicker.m"; sourceTree = "<group>"; };
+		EAF646A01D056D27006B59BD /* PDCPropertyManager+UIStackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PDCPropertyManager+UIStackView.h"; sourceTree = "<group>"; };
+		EAF646A11D056D27006B59BD /* PDCPropertyManager+UIStackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PDCPropertyManager+UIStackView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +233,38 @@
 				EAF646681D051CAD006B59BD /* PDCPropertyManager+UIImageView.m */,
 				EAF6466A1D051F1B006B59BD /* PDCPropertyManager+UILabel.h */,
 				EAF6466B1D051F1B006B59BD /* PDCPropertyManager+UILabel.m */,
+				EAF646701D054DE8006B59BD /* PDCPropertyManager+UITextField.h */,
+				EAF646711D054DE8006B59BD /* PDCPropertyManager+UITextField.m */,
+				EAF646731D055788006B59BD /* PDCPropertyManager+UITextView.h */,
+				EAF646741D055788006B59BD /* PDCPropertyManager+UITextView.m */,
+				EAF646761D055796006B59BD /* PDCPropertyManager+UIScrollView.h */,
+				EAF646771D055796006B59BD /* PDCPropertyManager+UIScrollView.m */,
+				EAF6467C1D0557B3006B59BD /* PDCPropertyManager+UITableView.h */,
+				EAF6467D1D0557B4006B59BD /* PDCPropertyManager+UITableView.m */,
+				EAF646821D056C24006B59BD /* PDCPropertyManager+UITableViewCell.h */,
+				EAF646831D056C24006B59BD /* PDCPropertyManager+UITableViewCell.m */,
+				EAF646851D056C2F006B59BD /* PDCPropertyManager+UICollectionView.h */,
+				EAF646861D056C2F006B59BD /* PDCPropertyManager+UICollectionView.m */,
+				EAF646881D056C48006B59BD /* PDCPropertyManager+UICollectionViewCell.h */,
+				EAF646891D056C48006B59BD /* PDCPropertyManager+UICollectionViewCell.m */,
+				EAF6468B1D056C59006B59BD /* PDCPropertyManager+UIWebView.h */,
+				EAF6468C1D056C59006B59BD /* PDCPropertyManager+UIWebView.m */,
+				EAF6468E1D056C66006B59BD /* PDCPropertyManager+UISwitch.h */,
+				EAF6468F1D056C66006B59BD /* PDCPropertyManager+UISwitch.m */,
+				EAF646911D056CB7006B59BD /* PDCPropertyManager+UIProgressView.h */,
+				EAF646921D056CB7006B59BD /* PDCPropertyManager+UIProgressView.m */,
+				EAF646941D056CD0006B59BD /* PDCPropertyManager+UISlider.h */,
+				EAF646951D056CD0006B59BD /* PDCPropertyManager+UISlider.m */,
+				EAF646971D056CE9006B59BD /* PDCPropertyManager+UISegmentedControl.h */,
+				EAF646981D056CE9006B59BD /* PDCPropertyManager+UISegmentedControl.m */,
+				EAF6469A1D056CFC006B59BD /* PDCPropertyManager+UIStepper.h */,
+				EAF6469B1D056CFC006B59BD /* PDCPropertyManager+UIStepper.m */,
+				EAF6469D1D056D0D006B59BD /* PDCPropertyManager+UIDatePicker.h */,
+				EAF6469E1D056D0D006B59BD /* PDCPropertyManager+UIDatePicker.m */,
+				EAF646A01D056D27006B59BD /* PDCPropertyManager+UIStackView.h */,
+				EAF646A11D056D27006B59BD /* PDCPropertyManager+UIStackView.m */,
+				EAF6467F1D055A83006B59BD /* PDCPropertyManager+Other.h */,
+				EAF646801D055A83006B59BD /* PDCPropertyManager+Other.m */,
 			);
 			name = main;
 			sourceTree = "<group>";
@@ -321,14 +401,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAF6466F1D051F2E006B59BD /* PDCPropertyManager+UIButton.m in Sources */,
+				EAF6467E1D0557B4006B59BD /* PDCPropertyManager+UITableView.m in Sources */,
+				EAF6468D1D056C59006B59BD /* PDCPropertyManager+UIWebView.m in Sources */,
 				EA48528F1D0284890009875A /* ViewController.m in Sources */,
+				EAF646961D056CD0006B59BD /* PDCPropertyManager+UISlider.m in Sources */,
+				EAF6469C1D056CFC006B59BD /* PDCPropertyManager+UIStepper.m in Sources */,
+				EAF646811D055A83006B59BD /* PDCPropertyManager+Other.m in Sources */,
+				EAF646781D055796006B59BD /* PDCPropertyManager+UIScrollView.m in Sources */,
+				EAF6469F1D056D0D006B59BD /* PDCPropertyManager+UIDatePicker.m in Sources */,
+				EAF646A21D056D27006B59BD /* PDCPropertyManager+UIStackView.m in Sources */,
+				EAF646931D056CB7006B59BD /* PDCPropertyManager+UIProgressView.m in Sources */,
 				EAF646691D051CAD006B59BD /* PDCPropertyManager+UIImageView.m in Sources */,
 				EA48528C1D0284890009875A /* AppDelegate.m in Sources */,
+				EAF646871D056C2F006B59BD /* PDCPropertyManager+UICollectionView.m in Sources */,
+				EAF646721D054DE8006B59BD /* PDCPropertyManager+UITextField.m in Sources */,
 				EA4852BD1D0284FE0009875A /* UIView+PDCAdd.m in Sources */,
 				EA4852891D0284890009875A /* main.m in Sources */,
+				EAF646751D055788006B59BD /* PDCPropertyManager+UITextView.m in Sources */,
+				EAF646991D056CE9006B59BD /* PDCPropertyManager+UISegmentedControl.m in Sources */,
 				EA4852C31D0288D00009875A /* PDCPropertyManager.m in Sources */,
+				EAF646901D056C66006B59BD /* PDCPropertyManager+UISwitch.m in Sources */,
+				EAF6468A1D056C48006B59BD /* PDCPropertyManager+UICollectionViewCell.m in Sources */,
 				EA4852CA1D02A3C30009875A /* SubLabel.m in Sources */,
 				EAF6466C1D051F1B006B59BD /* PDCPropertyManager+UILabel.m in Sources */,
+				EAF646841D056C24006B59BD /* PDCPropertyManager+UITableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

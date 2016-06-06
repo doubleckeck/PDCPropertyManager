@@ -17,45 +17,25 @@
 @end
 
 @implementation PDCPropertyManager
--(UIView *)tempView
+-( __kindof UIView *)tempView
 {
     if (!_tempView)
     {
-        //view
-        if (self.pdc_view)
+        if ([self.main isKindOfClass:[UIView class]])
         {
-            _tempView = self.pdc_view;
-        }
-        //label
-        else if (self.pdc_label)
-        {
-            _tempView = self.pdc_label;
-        }
-        //button
-        else if (self.pdc_button)
-        {
-            _tempView = self.pdc_button;
-        }
-        //textField
-        else if (self.pdc_textField)
-        {
-            _tempView = self.pdc_textField;
+            _tempView = self.main;
         }
     }
     return _tempView;
 }
 
--(UIControl *)tempControl
+-( __kindof UIControl *)tempControl
 {
     if (!_tempControl)
     {
-        if (self.pdc_button)
+        if ([self.main isKindOfClass:[UIControl class]])
         {
-            _tempControl = self.pdc_button;
-        }
-        else if (self.pdc_textField)
-        {
-            _tempControl = self.pdc_textField;
+            _tempControl = self.main;
         }
     }
     return _tempControl;
@@ -254,6 +234,14 @@
 {
     return ^PDCPropertyManager *(id target,SEL sel,UIControlEvents controlEvents){
         [self.tempControl addTarget:target action:sel forControlEvents:controlEvents];
+        return self;
+    };
+}
+
+-(pdc_ct_action )removeAction
+{
+    return ^PDCPropertyManager *(id target,SEL sel,UIControlEvents controlEvents){
+        [self.tempControl removeTarget:target action:sel forControlEvents:controlEvents];
         return self;
     };
 }

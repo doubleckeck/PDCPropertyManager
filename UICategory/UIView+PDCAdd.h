@@ -20,8 +20,8 @@
 @property (assign, nonatomic) CGPoint origin;
 @property (assign, nonatomic) CGSize size;
 
-@property (assign, readonly, nonatomic) CGFloat midX;
-@property (assign, readonly, nonatomic) CGFloat midY;
-@property (assign, readonly, nonatomic) CGFloat maxX;
-@property (assign, readonly, nonatomic) CGFloat maxY;
+@property (assign, readonly, nonatomic) CGFloat midX;   //x + width*0.5f
+@property (assign, readonly, nonatomic) CGFloat midY;   //y + height*0.5f
+@property (assign, readonly, nonatomic) CGFloat maxX;   //x + width
+@property (assign, readonly, nonatomic) CGFloat maxY;   //y + height
 @end

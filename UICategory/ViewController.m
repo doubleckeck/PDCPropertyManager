@@ -12,6 +12,7 @@
 #import "PDCPropertyManager+UIImageView.h"
 #import "PDCPropertyManager+UIButton.h"
 #import "PDCPropertyManager+UILabel.h"
+#import "PDCPropertyManager+UITextField.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIView *myView;
@@ -85,11 +86,23 @@
 
     
     self.imageVIew.pdc_manager.iv_image([UIImage imageNamed:@"123"]);
+    
+    
+    self.textField.pdc_manager
+    .action(self,@selector(field:),UIControlEventEditingChanged)
+    .tf_placeholder(@"this is a placeholder")
+    .backgroundColor([UIColor purpleColor]);
+}
+
+-(void )field:(UITextField *)field
+{
+    NSLog(@"change ");
 }
 
 -(void )action:(id )sender
 {
     NSLog(@"action click");
+    [self.textField resignFirstResponder];
 }
 
 - (IBAction)change:(id)sender
