@@ -12,6 +12,8 @@
 @property (nonatomic, weak) __kindof UIView *tempView;   //temp View,use to set view
 
 @property (nonatomic, weak) __kindof UIControl *tempControl;   //temp control,use to set control sub class
+
+
 @end
 
 @implementation PDCPropertyManager
@@ -64,7 +66,7 @@
 -(pdc_float )x
 {
     return ^PDCPropertyManager *(CGFloat x){
-        dispatch_sync(dispatch_get_main_queue(), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
             CGRect frame = self.tempView.frame;
             frame.origin.x = x;
             self.tempView.frame = frame;
@@ -76,7 +78,7 @@
 -(pdc_float )y
 {
     return ^PDCPropertyManager *(CGFloat y){
-        dispatch_sync(dispatch_get_main_queue(), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
             CGRect frame = self.tempView.frame;
             frame.origin.y = y;
             self.tempView.frame = frame;
@@ -88,7 +90,7 @@
 -(pdc_float )width
 {
     return ^PDCPropertyManager *(CGFloat width){
-        dispatch_sync(dispatch_get_main_queue(), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
             CGRect frame = self.tempView.frame;
             frame.size.width = width;
             self.tempView.frame = frame;
@@ -100,7 +102,7 @@
 -(pdc_float )height
 {
     return ^PDCPropertyManager *(CGFloat height){
-        dispatch_sync(dispatch_get_main_queue(), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
             CGRect frame = self.tempView.frame;
             frame.size.height = height;
             self.tempView.frame = frame;
@@ -112,7 +114,7 @@
 -(pdc_rect )frame
 {
     return ^PDCPropertyManager *(CGRect frame){
-        dispatch_sync(dispatch_get_main_queue(), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
             self.tempView.frame = frame;
         });
         return self;
@@ -122,7 +124,7 @@
 -(pdc_rect )bounds
 {
     return ^PDCPropertyManager *(CGRect bounds){
-        dispatch_sync(dispatch_get_main_queue(), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
             self.pdc_view.bounds = bounds;
         });
         return self;
@@ -132,7 +134,7 @@
 -(pdc_point )center
 {
     return ^PDCPropertyManager *(CGPoint center){
-        dispatch_sync(dispatch_get_main_queue(), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
             self.pdc_view.center = center;
         });
         return self;
@@ -142,7 +144,7 @@
 -(pdc_transform )transform
 {
     return ^PDCPropertyManager *(CGAffineTransform transform){
-        dispatch_sync(dispatch_get_main_queue(), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
             self.tempView.transform = transform;
         });
         return self;
