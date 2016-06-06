@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import "UIView+PDCAdd.h"
 #import "SubLabel.h"
+#import "PDCPropertyManager+UIImageView.h"
+#import "PDCPropertyManager+UIButton.h"
+#import "PDCPropertyManager+UILabel.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIView *myView;
@@ -16,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *btn;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet SubLabel *subLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *imageVIew;
 
 @end
 
@@ -75,6 +79,8 @@
     self.btn.pdc_manager
     .action(self,@selector(action:),UIControlEventTouchUpInside);
 
+    
+    self.imageVIew.pdc_manager.iv_image([UIImage imageNamed:@"123"]);
 }
 
 -(void )action:(id )sender

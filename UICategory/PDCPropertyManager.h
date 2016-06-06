@@ -38,79 +38,47 @@ typedef PDCPropertyManager *(^pdc_bt_attributedString)(NSAttributedString *,UICo
 typedef PDCPropertyManager *(^pdc_ct_action)(id target,SEL sel,UIControlEvents controlEvents);
 
 @interface PDCPropertyManager : NSObject
-#pragma mark - view
+#pragma mark - UIView
 @property (nonatomic, weak) UIView *pdc_view;
 /* property */
-@property (nonatomic, copy) pdc_float x;
-@property (nonatomic, copy) pdc_float y;
-@property (nonatomic, copy) pdc_float width;
-@property (nonatomic, copy) pdc_float height;
-@property (nonatomic, copy) pdc_rect frame;
-@property (nonatomic, copy) pdc_rect bounds;
-@property (nonatomic, copy) pdc_point center;
-@property (nonatomic, copy) pdc_transform transform;
+@property (nonatomic, readonly, copy) pdc_float x;
+@property (nonatomic, readonly, copy) pdc_float y;
+@property (nonatomic, readonly, copy) pdc_float width;
+@property (nonatomic, readonly, copy) pdc_float height;
+@property (nonatomic, readonly, copy) pdc_rect frame;
+@property (nonatomic, readonly, copy) pdc_rect bounds;
+@property (nonatomic, readonly, copy) pdc_point center;
+@property (nonatomic, readonly, copy) pdc_transform transform;
 
-@property (nonatomic, copy) pdc_color backgroundColor;
-@property (nonatomic, copy) pdc_bool clipsToBounds;
-@property (nonatomic, copy) pdc_bool hidden;
-@property (nonatomic, copy) pdc_bool opaque;
-@property (nonatomic, copy) pdc_bool clearsContextBeforeDrawing;
-@property (nonatomic, copy) pdc_float alpha;
+@property (nonatomic, readonly, copy) pdc_color backgroundColor;
+@property (nonatomic, readonly, copy) pdc_bool clipsToBounds;
+@property (nonatomic, readonly, copy) pdc_bool hidden;
+@property (nonatomic, readonly, copy) pdc_bool opaque;
+@property (nonatomic, readonly, copy) pdc_bool clearsContextBeforeDrawing;
+@property (nonatomic, readonly, copy) pdc_float alpha;
 
-@property (nonatomic, copy) pdc_color tintColor NS_AVAILABLE_IOS(7_0);
-@property (nonatomic, copy) pdc_tintAdjustmentMode tintAdjustmentMode NS_AVAILABLE_IOS(7_0);
+@property (nonatomic, readonly, copy) pdc_color tintColor NS_AVAILABLE_IOS(7_0);
+@property (nonatomic, readonly, copy) pdc_tintAdjustmentMode tintAdjustmentMode NS_AVAILABLE_IOS(7_0);
 
-@property (nonatomic, copy) pdc_integer tag;
-@property (nonatomic, copy) pdc_bool userInteractionEnabled;
+@property (nonatomic, readonly, copy) pdc_integer tag;
+@property (nonatomic, readonly, copy) pdc_bool userInteractionEnabled;
 
-@property (nonatomic, copy) pdc_edgeInsets layoutMargins NS_AVAILABLE_IOS(8_0);
-
-/* method */
-@property (nonatomic, copy) pdc_view addSubView;
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-#pragma mark button
-@property (nonatomic, weak) UIButton *pdc_button;
-/* property */
-@property (nonatomic, copy) pdc_edgeInsets bt_contentEdgeInsets;
-@property (nonatomic, copy) pdc_edgeInsets bt_titleEdgeInsets;
-@property (nonatomic, copy) pdc_edgeInsets bt_imageEdgeInsets;
-
-@property (nonatomic, copy) pdc_bool bt_reversesTitleShadowWhenHighlighted;
-@property (nonatomic, copy) pdc_bool bt_adjustsImageWhenHighlighted;
-@property (nonatomic, copy) pdc_bool bt_adjustsImageWhenDisabled;
-@property (nonatomic, copy) pdc_bool bt_showsTouchWhenHighlighted __TVOS_PROHIBITED;
+@property (nonatomic, readonly, copy) pdc_edgeInsets layoutMargins NS_AVAILABLE_IOS(8_0);
 
 /* method */
-@property (nonatomic, copy) pdc_bt_text bt_title;
-@property (nonatomic, copy) pdc_string bt_titleLabel;
-@property (nonatomic, copy) pdc_bt_color bt_titleColor;
-@property (nonatomic, copy) pdc_bt_color bt_titleShadowColor;
-@property (nonatomic, copy) pdc_bt_image bt_image;
-@property (nonatomic, copy) pdc_bt_image bt_backgroundImage;
-@property (nonatomic, copy) pdc_bt_attributedString bt_attributedTitle;
+@property (nonatomic, readonly, copy) pdc_view addSubView;
 
 
 #pragma mark - UIControl
-@property (nonatomic, copy) pdc_ct_action action;
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-#pragma mark - label
+@property (nonatomic, readonly, copy) pdc_ct_action action;
+
+@property (nonatomic, weak) UIButton *pdc_button;
 @property (nonatomic, weak) UILabel *pdc_label;
-/* property */
-@property (nonatomic, copy) pdc_string lb_text;
-
-/* method */
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-#pragma mark - fieid
 @property (nonatomic, weak) UITextField *pdc_textField;
-/* property */
-
-/* method */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@property (nonatomic, weak) UITextView *pdc_textView;
+@property (nonatomic, weak) UIImageView *pdc_imageView;
 
 @end
-
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  |

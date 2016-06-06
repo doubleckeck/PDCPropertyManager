@@ -42,6 +42,11 @@
     {
         manager.pdc_textField = (UITextField *)self;
     }
+    //is UITextField
+    else if ([self isMemberOfClass:[UIImageView class]])
+    {
+        manager.pdc_imageView = (UIImageView *)self;
+    }
     return manager;
 }
 

@@ -55,11 +55,19 @@
                                     <action selector="change:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7kl-VJ-Fcs"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="43B-ST-JYE">
+                                <rect key="frame" x="30" y="362" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="XHQ-dq-W9m"/>
+                                    <constraint firstAttribute="height" constant="50" id="abG-JY-kTd"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="K3l-ne-0nh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0nv-x1-Yaz"/>
                             <constraint firstItem="Zr7-4q-W0v" firstAttribute="top" secondItem="0rv-J6-BSS" secondAttribute="bottom" constant="25" id="1JS-B7-YUf"/>
+                            <constraint firstItem="43B-ST-JYE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="2Ji-1b-fJ8"/>
                             <constraint firstItem="0rv-J6-BSS" firstAttribute="top" secondItem="pCR-aP-Gz1" secondAttribute="bottom" constant="20" id="2yS-3h-WMg"/>
                             <constraint firstItem="pCR-aP-Gz1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3OA-jc-2tE"/>
                             <constraint firstItem="Zr7-4q-W0v" firstAttribute="leading" secondItem="0rv-J6-BSS" secondAttribute="leading" id="7dU-dO-WWu"/>
@@ -70,6 +78,7 @@
                             <constraint firstItem="0rv-J6-BSS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nbs-Wy-YVv"/>
                             <constraint firstItem="BRa-iw-6yK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ned-3b-sVD"/>
                             <constraint firstItem="0rv-J6-BSS" firstAttribute="leading" secondItem="BRa-iw-6yK" secondAttribute="leading" id="SjU-Un-Dlz"/>
+                            <constraint firstItem="43B-ST-JYE" firstAttribute="top" secondItem="Mhe-1C-9zt" secondAttribute="bottom" constant="38" id="asq-Qo-gKu"/>
                             <constraint firstItem="K3l-ne-0nh" firstAttribute="leading" secondItem="BRa-iw-6yK" secondAttribute="leading" id="gOV-qc-dCn"/>
                             <constraint firstItem="Zr7-4q-W0v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jD6-FV-l0T"/>
                             <constraint firstItem="pCR-aP-Gz1" firstAttribute="leading" secondItem="BRa-iw-6yK" secondAttribute="leading" id="qGc-uD-Ofn"/>
@@ -79,6 +88,7 @@
                     </view>
                     <connections>
                         <outlet property="btn" destination="pCR-aP-Gz1" id="eAg-Nf-0gA"/>
+                        <outlet property="imageVIew" destination="43B-ST-JYE" id="0Ak-CC-o4i"/>
                         <outlet property="label" destination="K3l-ne-0nh" id="jTD-tI-lGj"/>
                         <outlet property="myView" destination="BRa-iw-6yK" id="n9u-AQ-XqT"/>
                         <outlet property="subLabel" destination="Zr7-4q-W0v" id="xBy-3b-W26"/>

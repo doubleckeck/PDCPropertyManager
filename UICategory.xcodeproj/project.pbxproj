@@ -19,6 +19,9 @@
 		EA4852C31D0288D00009875A /* PDCPropertyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4852C21D0288D00009875A /* PDCPropertyManager.m */; };
 		EA4852CA1D02A3C30009875A /* SubLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4852C91D02A3C30009875A /* SubLabel.m */; };
 		EA624ED41D03DEBE00F673A0 /* 123.png in Resources */ = {isa = PBXBuildFile; fileRef = EA624ED31D03DEBE00F673A0 /* 123.png */; };
+		EAF646691D051CAD006B59BD /* PDCPropertyManager+UIImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF646681D051CAD006B59BD /* PDCPropertyManager+UIImageView.m */; };
+		EAF6466C1D051F1B006B59BD /* PDCPropertyManager+UILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF6466B1D051F1B006B59BD /* PDCPropertyManager+UILabel.m */; };
+		EAF6466F1D051F2E006B59BD /* PDCPropertyManager+UIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF6466E1D051F2E006B59BD /* PDCPropertyManager+UIButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,12 @@
 		EA4852C81D02A3C30009875A /* SubLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubLabel.h; sourceTree = "<group>"; };
 		EA4852C91D02A3C30009875A /* SubLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubLabel.m; sourceTree = "<group>"; };
 		EA624ED31D03DEBE00F673A0 /* 123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 123.png; sourceTree = "<group>"; };
+		EAF646671D051CAD006B59BD /* PDCPropertyManager+UIImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PDCPropertyManager+UIImageView.h"; sourceTree = "<group>"; };
+		EAF646681D051CAD006B59BD /* PDCPropertyManager+UIImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PDCPropertyManager+UIImageView.m"; sourceTree = "<group>"; };
+		EAF6466A1D051F1B006B59BD /* PDCPropertyManager+UILabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PDCPropertyManager+UILabel.h"; sourceTree = "<group>"; };
+		EAF6466B1D051F1B006B59BD /* PDCPropertyManager+UILabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PDCPropertyManager+UILabel.m"; sourceTree = "<group>"; };
+		EAF6466D1D051F2E006B59BD /* PDCPropertyManager+UIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PDCPropertyManager+UIButton.h"; sourceTree = "<group>"; };
+		EAF6466E1D051F2E006B59BD /* PDCPropertyManager+UIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PDCPropertyManager+UIButton.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +179,12 @@
 				EA4852BC1D0284FE0009875A /* UIView+PDCAdd.m */,
 				EA4852C11D0288D00009875A /* PDCPropertyManager.h */,
 				EA4852C21D0288D00009875A /* PDCPropertyManager.m */,
+				EAF6466D1D051F2E006B59BD /* PDCPropertyManager+UIButton.h */,
+				EAF6466E1D051F2E006B59BD /* PDCPropertyManager+UIButton.m */,
+				EAF646671D051CAD006B59BD /* PDCPropertyManager+UIImageView.h */,
+				EAF646681D051CAD006B59BD /* PDCPropertyManager+UIImageView.m */,
+				EAF6466A1D051F1B006B59BD /* PDCPropertyManager+UILabel.h */,
+				EAF6466B1D051F1B006B59BD /* PDCPropertyManager+UILabel.m */,
 			);
 			name = main;
 			sourceTree = "<group>";
@@ -305,12 +320,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAF6466F1D051F2E006B59BD /* PDCPropertyManager+UIButton.m in Sources */,
 				EA48528F1D0284890009875A /* ViewController.m in Sources */,
+				EAF646691D051CAD006B59BD /* PDCPropertyManager+UIImageView.m in Sources */,
 				EA48528C1D0284890009875A /* AppDelegate.m in Sources */,
 				EA4852BD1D0284FE0009875A /* UIView+PDCAdd.m in Sources */,
 				EA4852891D0284890009875A /* main.m in Sources */,
 				EA4852C31D0288D00009875A /* PDCPropertyManager.m in Sources */,
 				EA4852CA1D02A3C30009875A /* SubLabel.m in Sources */,
+				EAF6466C1D051F1B006B59BD /* PDCPropertyManager+UILabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
