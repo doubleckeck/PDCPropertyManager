@@ -9,7 +9,9 @@
 #import "PDCPropertyManager.h"
 
 @interface PDCPropertyManager()
-@property (nonatomic, weak) UIView *temp;   //temp View,use to set view
+@property (nonatomic, weak) __kindof UIView *temp;   //temp View,use to set view
+
+@property (nonatomic, weak) __kindof UIControl *tempControl;   //temp control,use to set control sub class
 @end
 
 @implementation PDCPropertyManager
@@ -41,6 +43,22 @@
     return _temp;
 }
 
+-(UIControl *)tempControl
+{
+    if (!_tempControl)
+    {
+        if (self.pdc_button)
+        {
+            _tempControl = self.pdc_button;
+        }
+        else if (self.pdc_textField)
+        {
+            _tempControl = self.pdc_textField;
+        }
+    }
+    return _tempControl;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 #pragma mark - view geo
 -(pdc_float )x
 {
@@ -271,76 +289,76 @@
 
 
 
-
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 #pragma mark - button
--(pdc_edgeInsets )contentEdgeInsets
+-(pdc_edgeInsets )bt_contentEdgeInsets
 {
     __block typeof(self) weakself = self;
-    _contentEdgeInsets = ^PDCPropertyManager *(UIEdgeInsets contentEdgeInsets){
+    _bt_contentEdgeInsets = ^PDCPropertyManager *(UIEdgeInsets contentEdgeInsets){
         weakself.pdc_button.contentEdgeInsets = contentEdgeInsets;
         return weakself;
     };
-    return _contentEdgeInsets;
+    return _bt_contentEdgeInsets;
 }
 
--(pdc_edgeInsets )titleEdgeInsets
+-(pdc_edgeInsets )bt_titleEdgeInsets
 {
     __block typeof(self) weakself = self;
-    _titleEdgeInsets = ^PDCPropertyManager *(UIEdgeInsets titleEdgeInsets){
+    _bt_titleEdgeInsets = ^PDCPropertyManager *(UIEdgeInsets titleEdgeInsets){
         weakself.pdc_button.titleEdgeInsets = titleEdgeInsets;
         return weakself;
     };
-    return _titleEdgeInsets;
+    return _bt_titleEdgeInsets;
 }
 
--(pdc_edgeInsets )imageEdgeInsets
+-(pdc_edgeInsets )bt_imageEdgeInsets
 {
     __block typeof(self) weakself = self;
-    _imageEdgeInsets = ^PDCPropertyManager *(UIEdgeInsets imageEdgeInsets){
+    _bt_imageEdgeInsets = ^PDCPropertyManager *(UIEdgeInsets imageEdgeInsets){
         weakself.pdc_button.imageEdgeInsets = imageEdgeInsets;
         return weakself;
     };
-    return _imageEdgeInsets;
+    return _bt_imageEdgeInsets;
 }
 
--(pdc_bool )reversesTitleShadowWhenHighlighted
+-(pdc_bool )bt_reversesTitleShadowWhenHighlighted
 {
     __block typeof(self) weakself = self;
-    _reversesTitleShadowWhenHighlighted = ^PDCPropertyManager *(BOOL reversesTitleShadowWhenHighlighted){
+    _bt_reversesTitleShadowWhenHighlighted = ^PDCPropertyManager *(BOOL reversesTitleShadowWhenHighlighted){
         weakself.pdc_button.reversesTitleShadowWhenHighlighted = reversesTitleShadowWhenHighlighted;
         return weakself;
     };
-    return _reversesTitleShadowWhenHighlighted;
+    return _bt_reversesTitleShadowWhenHighlighted;
 }
 
--(pdc_bool )adjustsImageWhenHighlighted
+-(pdc_bool )bt_adjustsImageWhenHighlighted
 {
     __block typeof(self) weakself = self;
-    _adjustsImageWhenHighlighted = ^PDCPropertyManager *(BOOL adjustsImageWhenHighlighted){
+    _bt_adjustsImageWhenHighlighted = ^PDCPropertyManager *(BOOL adjustsImageWhenHighlighted){
         weakself.pdc_button.adjustsImageWhenHighlighted = adjustsImageWhenHighlighted;
         return weakself;
     };
-    return _adjustsImageWhenHighlighted;
+    return _bt_adjustsImageWhenHighlighted;
 }
 
--(pdc_bool )adjustsImageWhenDisabled
+-(pdc_bool )bt_adjustsImageWhenDisabled
 {
     __block typeof(self) weakself = self;
-    _adjustsImageWhenDisabled = ^PDCPropertyManager *(BOOL adjustsImageWhenDisabled){
+    _bt_adjustsImageWhenDisabled = ^PDCPropertyManager *(BOOL adjustsImageWhenDisabled){
         weakself.pdc_button.adjustsImageWhenDisabled = adjustsImageWhenDisabled;
         return weakself;
     };
-    return _adjustsImageWhenDisabled;
+    return _bt_adjustsImageWhenDisabled;
 }
 
--(pdc_bool )showsTouchWhenHighlighted
+-(pdc_bool )bt_showsTouchWhenHighlighted
 {
     __block typeof(self) weakself = self;
-    _showsTouchWhenHighlighted = ^PDCPropertyManager *(BOOL showsTouchWhenHighlighted){
+    _bt_showsTouchWhenHighlighted = ^PDCPropertyManager *(BOOL showsTouchWhenHighlighted){
         weakself.pdc_button.showsTouchWhenHighlighted = showsTouchWhenHighlighted;
         return weakself;
     };
-    return _showsTouchWhenHighlighted;
+    return _bt_showsTouchWhenHighlighted;
 }
 
 -(pdc_bt_text )bt_title
@@ -363,7 +381,67 @@
     return _bt_titleLabel;
 }
 
+-(pdc_bt_color )bt_titleColor
+{
+    __block typeof(self) weakself = self;
+    _bt_titleColor = ^PDCPropertyManager *(UIColor *color,UIControlState controlState){
+        [weakself.pdc_button setTitleColor:color forState:controlState];
+        return weakself;
+    };
+    return _bt_titleColor;
+}
 
+-(pdc_bt_color )bt_titleShadowColor
+{
+    __block typeof(self) weakself = self;
+    _bt_titleShadowColor = ^PDCPropertyManager *(UIColor *color,UIControlState controlState){
+        [weakself.pdc_button setTitleShadowColor:color forState:controlState];
+        return weakself;
+    };
+    return _bt_titleShadowColor;
+}
+
+-(pdc_bt_image )bt_image
+{
+    __block typeof(self) weakself = self;
+    _bt_image = ^PDCPropertyManager *(UIImage *image,UIControlState controlState){
+        [weakself.pdc_button setImage:image forState:controlState];
+        return weakself;
+    };
+    return _bt_image;
+}
+
+-(pdc_bt_image )bt_backgroundImage
+{
+    __block typeof(self) weakself = self;
+    _bt_backgroundImage = ^PDCPropertyManager *(UIImage *image,UIControlState controlState){
+        [weakself.pdc_button setBackgroundImage:image forState:controlState];
+        return weakself;
+    };
+    return _bt_backgroundImage;
+}
+
+-(pdc_bt_attributedString )bt_attributedTitle
+{
+    __block typeof(self) weakself = self;
+    _bt_attributedTitle = ^PDCPropertyManager *(NSAttributedString *title,UIControlState controlState){
+        [weakself.pdc_button setAttributedTitle:title forState:controlState];
+        return weakself;
+    };
+    return _bt_attributedTitle;
+}
+
+-(pdc_ct_action )action
+{
+    __block typeof(self) weakself = self;
+    _action = ^PDCPropertyManager *(id target,SEL sel,UIControlEvents controlEvents){
+        [weakself.tempControl addTarget:target action:sel forControlEvents:controlEvents];
+        return weakself;
+    };
+    return _action;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 #pragma mark - label
 -(pdc_string )lb_text
 {

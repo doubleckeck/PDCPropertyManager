@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -28,24 +28,33 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3l-ne-0nh">
                                 <rect key="frame" x="20" y="115" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCR-aP-Gz1">
-                                <rect key="frame" x="20" y="156" width="560" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCR-aP-Gz1">
+                                <rect key="frame" x="20" y="156" width="560" height="34"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.51764705879999995" green="0.80000000000000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0rv-J6-BSS">
-                                <rect key="frame" x="20" y="206" width="561" height="30"/>
+                                <rect key="frame" x="20" y="210" width="561" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zr7-4q-W0v" customClass="SubLabel">
-                                <rect key="frame" x="20" y="261" width="560" height="21"/>
+                                <rect key="frame" x="20" y="265" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhe-1C-9zt">
+                                <rect key="frame" x="277" y="294" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="change:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7kl-VJ-Fcs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -54,6 +63,8 @@
                             <constraint firstItem="0rv-J6-BSS" firstAttribute="top" secondItem="pCR-aP-Gz1" secondAttribute="bottom" constant="20" id="2yS-3h-WMg"/>
                             <constraint firstItem="pCR-aP-Gz1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3OA-jc-2tE"/>
                             <constraint firstItem="Zr7-4q-W0v" firstAttribute="leading" secondItem="0rv-J6-BSS" secondAttribute="leading" id="7dU-dO-WWu"/>
+                            <constraint firstItem="Mhe-1C-9zt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ATJ-ZK-rGv"/>
+                            <constraint firstItem="Mhe-1C-9zt" firstAttribute="top" secondItem="Zr7-4q-W0v" secondAttribute="bottom" constant="8" id="E6B-uE-4HQ"/>
                             <constraint firstItem="pCR-aP-Gz1" firstAttribute="top" secondItem="K3l-ne-0nh" secondAttribute="bottom" constant="20" id="GSb-4D-PUZ"/>
                             <constraint firstItem="BRa-iw-6yK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LfS-RR-wyN"/>
                             <constraint firstItem="0rv-J6-BSS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nbs-Wy-YVv"/>

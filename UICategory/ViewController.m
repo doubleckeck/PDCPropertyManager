@@ -31,8 +31,14 @@
 {
     [super viewDidAppear:animated];
     /* set view */
-    self.myView.pdc_manager.backgroundColor([UIColor redColor]);
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    self.myView.pdc_manager
+    .backgroundColor([UIColor redColor]);
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        self.myView.pdc_manager.x(100).y(300).width(400).height(300);
+    });
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         self.myView.pdc_manager
         .center(CGPointMake(200, 200))
         .backgroundColor([UIColor orangeColor]);
@@ -57,10 +63,27 @@
     });
     
     /* sub label,now just suport UIKit */
-    self.subLabel.pdc_manager.backgroundColor([UIColor redColor]);  //nothing to do
+    self.subLabel.pdc_manager
+    .backgroundColor([UIColor redColor]);  //nothing to do
     
     /* btn title */
-    self.btn.pdc_manager.bt_title(@"this is button title",UIControlStateNormal);
+    self.btn.pdc_manager
+    .bt_title(@"this is button title",UIControlStateNormal)
+    .bt_image([UIImage imageNamed:@"123"],UIControlStateNormal);
+    
+    
+    self.btn.pdc_manager
+    .action(self,@selector(action:),UIControlEventTouchUpInside);
+
 }
 
+-(void )action:(id )sender
+{
+    NSLog(@"action click");
+}
+
+- (IBAction)change:(id)sender
+{
+    [self.btn setImage:[UIImage imageNamed:@"123"] forState:UIControlStateNormal];
+}
 @end
