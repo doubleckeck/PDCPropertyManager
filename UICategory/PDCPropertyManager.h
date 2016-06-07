@@ -104,9 +104,9 @@ typedef PDCPropertyManager *(^pdc_ct_action)(id target,SEL sel,UIControlEvents c
 
 @property (nonatomic, weak) __kindof UIScrollView            *pdc_scrollView;    //sc
 @property (nonatomic, weak) __kindof UITableView             *pdc_tableView;     //tb
-@property (nonatomic, weak) __kindof UITableViewCell         *pdc_tableViewCell; //tbc
-@property (nonatomic, weak) __kindof UICollectionView        *pdc_collectionView;//cl
-@property (nonatomic, weak) __kindof UICollectionViewCell    *pdc_collectionViewCell;    //clc
+@property (nonatomic, weak) __kindof UITableViewCell         *pdc_tableViewCell;        PDC_DONE   //tbc
+@property (nonatomic, weak) __kindof UICollectionView        *pdc_collectionView;       PDC_DONE   //cl
+@property (nonatomic, weak) __kindof UICollectionViewCell    *pdc_collectionViewCell;   PDC_DONE   //clc
 @property (nonatomic, weak) __kindof UIWebView               *pdc_webView;       //web
 @property (nonatomic, weak) __kindof UIActivityIndicatorView *pdc_activityIndicatorView; //act
 @property (nonatomic, weak) __kindof UIProgressView          *pdc_progressView;  //pro
