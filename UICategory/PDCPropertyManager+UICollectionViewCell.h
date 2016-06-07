@@ -10,4 +10,12 @@
 
 @interface PDCPropertyManager (UICollectionViewCell)
 
+@property (nonatomic, readonly, copy) pdc_bool clc_selected;
+
+@property (nonatomic, readonly, copy) pdc_bool clc_highlighted;
+
+@property (nonatomic, readonly, copy) pdc_view clc_backgroundView;
+
+@property (nonatomic, readonly, copy) pdc_view clc_selectedBackgroundView;
+
 @end

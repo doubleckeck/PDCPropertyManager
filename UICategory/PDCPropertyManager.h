@@ -14,6 +14,7 @@
 typedef PDCPropertyManager *(^pdc_void)(void);
 typedef PDCPropertyManager *(^pdc_float)(CGFloat);
 typedef PDCPropertyManager *(^pdc_bool)(BOOL);
+typedef PDCPropertyManager *(^pdc_bool_bool)(BOOL,BOOL);
 typedef PDCPropertyManager *(^pdc_integer)(NSInteger);
 typedef PDCPropertyManager *(^pdc_uinteger)(NSUInteger);
 typedef PDCPropertyManager *(^pdc_edgeInsets)(UIEdgeInsets);
