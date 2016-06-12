@@ -99,7 +99,7 @@
     };
 }
 
--(pdc_bt_image )bt_image
+-(pdc_image_state )bt_image
 {
     return ^PDCPropertyManager *(UIImage *image,UIControlState controlState){
         [self.pdc_button setImage:image forState:controlState];
@@ -107,7 +107,7 @@
     };
 }
 
--(pdc_bt_image )bt_backgroundImage
+-(pdc_image_state )bt_backgroundImage
 {
     return ^PDCPropertyManager *(UIImage *image,UIControlState controlState){
         [self.pdc_button setBackgroundImage:image forState:controlState];

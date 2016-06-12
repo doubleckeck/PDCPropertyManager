@@ -15,6 +15,7 @@ typedef PDCPropertyManager *(^pdc_void)(void);
 typedef PDCPropertyManager *(^pdc_float)(CGFloat);
 typedef PDCPropertyManager *(^pdc_bool)(BOOL);
 typedef PDCPropertyManager *(^pdc_bool_bool)(BOOL,BOOL);
+typedef PDCPropertyManager *(^pdc_float_bool)(CGFloat,BOOL);
 typedef PDCPropertyManager *(^pdc_point_bool)(CGPoint ,BOOL);
 typedef PDCPropertyManager *(^pdc_integer)(NSInteger);
 typedef PDCPropertyManager *(^pdc_uinteger)(NSUInteger);
@@ -29,10 +30,17 @@ typedef PDCPropertyManager *(^pdc_tintAdjustmentMode)(UIViewTintAdjustmentMode )
 typedef PDCPropertyManager *(^pdc_dictionary)(NSDictionary *);
 typedef PDCPropertyManager *(^pdc_array)(NSArray *);
 
+typedef PDCPropertyManager *(^pdc_locale)(NSLocale *);
+typedef PDCPropertyManager *(^pdc_calendar)(NSCalendar *);
+typedef PDCPropertyManager *(^pdc_timeZone)(NSTimeZone *);
+typedef PDCPropertyManager *(^pdc_date)(NSDate *);
+typedef PDCPropertyManager *(^pdc_timeInterval)(NSTimeInterval );
+
 typedef PDCPropertyManager *(^pdc_color)(UIColor *);
 typedef PDCPropertyManager *(^pdc_view)(UIView *);
 typedef PDCPropertyManager *(^pdc_image)(UIImage *);
 typedef PDCPropertyManager *(^pdc_font)(UIFont *);
+typedef PDCPropertyManager *(^pdc_image_state)(UIImage *,UIControlState);
 
 typedef PDCPropertyManager *(^pdc_string)(NSString *);
 typedef PDCPropertyManager *(^pdc_attributedString)(NSAttributedString *);
@@ -96,29 +104,29 @@ typedef PDCPropertyManager *(^pdc_ct_action)(id target,SEL sel,UIControlEvents c
 /* category use,overlook */
 @property (nonatomic, weak) id                      main;           //clear is UIControl or UIView
 
-@property (nonatomic, weak) __kindof UIView                  *pdc_view;     PDC_DONE
-@property (nonatomic, weak) __kindof UIButton                *pdc_button;   PDC_DONE    //bt
-@property (nonatomic, weak) __kindof UILabel                 *pdc_label;    PDC_DONE    //lb
-@property (nonatomic, weak) __kindof UITextField             *pdc_textField;PDC_DONE    //tf
-@property (nonatomic, weak) __kindof UIImageView             *pdc_imageView;PDC_DONE    //iv
-@property (nonatomic, weak) __kindof UITextView              *pdc_textView; PDC_DONE    //tv
+@property (nonatomic, weak) __kindof UIView                  *pdc_view;                 PDC_DONE    //
+@property (nonatomic, weak) __kindof UIButton                *pdc_button;               PDC_DONE    //bt
+@property (nonatomic, weak) __kindof UILabel                 *pdc_label;                PDC_DONE    //lb
+@property (nonatomic, weak) __kindof UITextField             *pdc_textField;            PDC_DONE    //tf
+@property (nonatomic, weak) __kindof UIImageView             *pdc_imageView;            PDC_DONE    //iv
+@property (nonatomic, weak) __kindof UITextView              *pdc_textView;             PDC_DONE    //tv
 
-@property (nonatomic, weak) __kindof UIScrollView            *pdc_scrollView;    //sc
-@property (nonatomic, weak) __kindof UITableView             *pdc_tableView;     //tb
-@property (nonatomic, weak) __kindof UITableViewCell         *pdc_tableViewCell;        PDC_DONE   //tbc
-@property (nonatomic, weak) __kindof UICollectionView        *pdc_collectionView;       PDC_DONE   //cl
-@property (nonatomic, weak) __kindof UICollectionViewCell    *pdc_collectionViewCell;   PDC_DONE   //clc
-@property (nonatomic, weak) __kindof UIWebView               *pdc_webView;       //web
-@property (nonatomic, weak) __kindof UIActivityIndicatorView *pdc_activityIndicatorView; //act
-@property (nonatomic, weak) __kindof UIProgressView          *pdc_progressView;  //pro
-@property (nonatomic, weak) __kindof UIPickerView            *pdc_pickView;      //pick
+@property (nonatomic, weak) __kindof UIScrollView            *pdc_scrollView;           PDC_DONE    //sc
+@property (nonatomic, weak) __kindof UITableView             *pdc_tableView;            PDC_DONE    //tb
+@property (nonatomic, weak) __kindof UITableViewCell         *pdc_tableViewCell;        PDC_DONE    //tbc
+@property (nonatomic, weak) __kindof UICollectionView        *pdc_collectionView;       PDC_DONE    //cl
+@property (nonatomic, weak) __kindof UICollectionViewCell    *pdc_collectionViewCell;   PDC_DONE    //clc
+@property (nonatomic, weak) __kindof UIWebView               *pdc_webView;              PDC_DONE    //web
+@property (nonatomic, weak) __kindof UIActivityIndicatorView *pdc_activityIndicatorView;PDC_DONE    //act
+@property (nonatomic, weak) __kindof UIProgressView          *pdc_progressView;         PDC_DONE    //pro
+@property (nonatomic, weak) __kindof UIPickerView            *pdc_pickView;             PDC_DONE    //pick
 
-@property (nonatomic, weak) __kindof UISwitch                *pdc_switch;        //swh
-@property (nonatomic, weak) __kindof UIPageControl           *pdc_pageControl;   //page
-@property (nonatomic, weak) __kindof UISlider                *pdc_slider;        //sld
-@property (nonatomic, weak) __kindof UISegmentedControl      *pdc_segmentedControl;  //seg
-@property (nonatomic, weak) __kindof UIStepper               *pdc_stepper;       //stp
-@property (nonatomic, weak) __kindof UIDatePicker            *pdc_datePicker;    //dpk
+@property (nonatomic, weak) __kindof UISwitch                *pdc_switch;               PDC_DONE    //swh
+@property (nonatomic, weak) __kindof UIPageControl           *pdc_pageControl;          PDC_DONE    //page
+@property (nonatomic, weak) __kindof UISlider                *pdc_slider;               PDC_DONE    //sld
+@property (nonatomic, weak) __kindof UISegmentedControl      *pdc_segmentedControl;     PDC_DONE    //seg    ---need to set method---
+@property (nonatomic, weak) __kindof UIStepper               *pdc_stepper;              PDC_DONE    //stp
+@property (nonatomic, weak) __kindof UIDatePicker            *pdc_datePicker;           PDC_DONE    //dp
 
 @property (nonatomic, weak) __kindof UIStackView             *pdc_stackView NS_CLASS_AVAILABLE_IOS(9_0);     //stv
 @end
@@ -129,5 +137,7 @@ typedef PDCPropertyManager *(^pdc_ct_action)(id target,SEL sel,UIControlEvents c
  |
  |  reconstruction 2016-06-06 all day.
  |
+ |  repair some problem and done most UIView subView 2016-06-12
  |
+ |  
  */

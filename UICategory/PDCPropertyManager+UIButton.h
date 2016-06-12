@@ -10,7 +10,6 @@
 
 typedef PDCPropertyManager *(^pdc_bt_text)(NSString *,UIControlState);
 typedef PDCPropertyManager *(^pdc_bt_color)(UIColor *,UIControlState);
-typedef PDCPropertyManager *(^pdc_bt_image)(UIImage *,UIControlState);
 typedef PDCPropertyManager *(^pdc_bt_attributedString)(NSAttributedString *,UIControlState);
 
 @interface PDCPropertyManager (UIButton)
@@ -38,9 +37,9 @@ typedef PDCPropertyManager *(^pdc_bt_attributedString)(NSAttributedString *,UICo
 
 @property (nonatomic, readonly, copy) pdc_bt_color  bt_titleShadowColor;
 
-@property (nonatomic, readonly, copy) pdc_bt_image  bt_image;
+@property (nonatomic, readonly, copy) pdc_image_state  bt_image;
 
-@property (nonatomic, readonly, copy) pdc_bt_image  bt_backgroundImage;
+@property (nonatomic, readonly, copy) pdc_image_state  bt_backgroundImage;
 
 @property (nonatomic, readonly, copy) pdc_bt_attributedString bt_attributedTitle;
 

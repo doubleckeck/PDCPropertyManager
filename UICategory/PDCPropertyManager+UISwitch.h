@@ -9,5 +9,19 @@
 #import "PDCPropertyManager.h"
 
 @interface PDCPropertyManager (UISwitch)
+//@property (strong, nonatomic) UISwitch *swh;
 
+@property (nonatomic, readonly, copy) pdc_color swh_onTintColor;
+
+@property (nonatomic, readonly, copy) pdc_color swh_tintColor;
+
+@property (nonatomic, readonly, copy) pdc_color swh_thumbTintColor;
+
+@property (nonatomic, readonly, copy) pdc_image swh_onImage;
+
+@property (nonatomic, readonly, copy) pdc_image swh_offImage;
+
+@property (nonatomic, readonly, copy) pdc_bool swh_on;
+
+@property (nonatomic, readonly, copy) pdc_bool_bool swh_on_animated;
 @end
