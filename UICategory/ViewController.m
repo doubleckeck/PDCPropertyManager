@@ -58,7 +58,6 @@
         
     });
     
-    
     /* set label */
     self.label.pdc_manager
     .lb_text(@"this is a label")
@@ -71,9 +70,9 @@
         .frame(CGRectMake(20, 100, 100, 50));
     });
     
-    /* sub label,now just suport UIKit */
+    // sublabel
     self.subLabel.pdc_manager
-    .backgroundColor([UIColor redColor]);  //nothing to do
+    .backgroundColor([UIColor redColor]);
     
     /* btn title */
     self.btn.pdc_manager
@@ -85,7 +84,8 @@
     .action(self,@selector(action:),UIControlEventTouchUpInside);
 
     
-    self.imageVIew.pdc_manager.iv_image([UIImage imageNamed:@"123"]);
+    self.imageVIew.pdc_manager
+    .iv_image([UIImage imageNamed:@"123"]);
     
     
     self.textField.pdc_manager
