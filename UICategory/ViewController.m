@@ -14,6 +14,8 @@
 #import "PDCPropertyManager+UILabel.h"
 #import "PDCPropertyManager+UITextField.h"
 
+//#import <MLeaksFinder.h>
+
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIView *myView;
 @property (weak, nonatomic) IBOutlet UILabel *label;
@@ -29,6 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 }
 
 

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>MLeaksFinder.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-UICategory.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-UICategoryTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-UICategoryUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>B5AC93A8D27003B5DEBF09CA847525DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D4C3ED4629E9EDBD4BBB92DE6CDBDC2E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D65E5CFA56FC61095B40548048EB790D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DE2A2D4E2729BC2E6E9A33FF79CCF8D0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

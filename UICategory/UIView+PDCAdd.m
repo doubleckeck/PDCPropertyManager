@@ -11,7 +11,7 @@
 @implementation UIView (PDCAdd)
 -(void )setPdc_manager:(PDCPropertyManager *)pdc_manager
 {
-    objc_setAssociatedObject(self, @selector(pdc_manager), pdc_manager, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, @selector(pdc_manager), pdc_manager, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 -(PDCPropertyManager *)pdc_manager
