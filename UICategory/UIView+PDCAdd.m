@@ -24,14 +24,14 @@
     
     manager.main = self;    //clear is UIControl or UIView
     
-    //is UIView
-    if ([self isKindOfClass:[UIView class]])
-    {
-        manager.pdc_view = self;
-    }
+//    //is UIView
+//    if ([self isKindOfClass:[UIView class]])
+//    {
+//        manager.pdc_view = self;
+//    }
     
     //is UILabel or subclass    --- 0 ---
-    else if ([self isKindOfClass:[UILabel class]])
+    if ([self isKindOfClass:[UILabel class]])
     {
         manager.pdc_label = (UILabel *)self;
     }

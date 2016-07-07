@@ -105,7 +105,7 @@
 {
     return ^PDCPropertyManager *(CGRect bounds){
         dispatch_async(dispatch_get_main_queue(), ^{
-            self.pdc_view.bounds = bounds;
+            self.tempView.bounds = bounds;
         });
         return self;
     };
@@ -115,7 +115,7 @@
 {
     return ^PDCPropertyManager *(CGPoint center){
         dispatch_async(dispatch_get_main_queue(), ^{
-            self.pdc_view.center = center;
+            self.tempView.center = center;
         });
         return self;
     };

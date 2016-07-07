@@ -17,7 +17,7 @@ typedef PDCPropertyManager *(^pdc_bool)(BOOL);
 typedef PDCPropertyManager *(^pdc_bool_bool)(BOOL,BOOL);
 typedef PDCPropertyManager *(^pdc_float_bool)(CGFloat,BOOL);
 typedef PDCPropertyManager *(^pdc_point_bool)(CGPoint ,BOOL);
-typedef PDCPropertyManager *(^pdc_integer)(NSInteger);
+typedef PDCPropertyManager *(^pdc_integer)(NSInteger);	
 typedef PDCPropertyManager *(^pdc_uinteger)(NSUInteger);
 typedef PDCPropertyManager *(^pdc_edgeInsets)(UIEdgeInsets);
 typedef PDCPropertyManager *(^pdc_rect)(CGRect);
@@ -104,13 +104,11 @@ typedef PDCPropertyManager *(^pdc_ct_action)(id target,SEL sel,UIControlEvents c
 /* category use,overlook */
 @property (nonatomic, weak) id                      main;           //clear is UIControl or UIView
 
-@property (nonatomic, weak) __kindof UIView                  *pdc_view;                 PDC_DONE    //
 @property (nonatomic, weak) __kindof UIButton                *pdc_button;               PDC_DONE    //bt
 @property (nonatomic, weak) __kindof UILabel                 *pdc_label;                PDC_DONE    //lb
 @property (nonatomic, weak) __kindof UITextField             *pdc_textField;            PDC_DONE    //tf
 @property (nonatomic, weak) __kindof UIImageView             *pdc_imageView;            PDC_DONE    //iv
 @property (nonatomic, weak) __kindof UITextView              *pdc_textView;             PDC_DONE    //tv
-
 @property (nonatomic, weak) __kindof UIScrollView            *pdc_scrollView;           PDC_DONE    //sc
 @property (nonatomic, weak) __kindof UITableView             *pdc_tableView;            PDC_DONE    //tb
 @property (nonatomic, weak) __kindof UITableViewCell         *pdc_tableViewCell;        PDC_DONE    //tbc
@@ -120,7 +118,6 @@ typedef PDCPropertyManager *(^pdc_ct_action)(id target,SEL sel,UIControlEvents c
 @property (nonatomic, weak) __kindof UIActivityIndicatorView *pdc_activityIndicatorView;PDC_DONE    //act
 @property (nonatomic, weak) __kindof UIProgressView          *pdc_progressView;         PDC_DONE    //pro
 @property (nonatomic, weak) __kindof UIPickerView            *pdc_pickView;             PDC_DONE    //pick
-
 @property (nonatomic, weak) __kindof UISwitch                *pdc_switch;               PDC_DONE    //swh
 @property (nonatomic, weak) __kindof UIPageControl           *pdc_pageControl;          PDC_DONE    //page
 @property (nonatomic, weak) __kindof UISlider                *pdc_slider;               PDC_DONE    //sld

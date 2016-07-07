@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PDCPropertyManager.h"
+#import "PDCManagerHeader.h"
 
 @interface UIView (PDCAdd)
 @property (nonatomic, strong) PDCPropertyManager *pdc_manager;

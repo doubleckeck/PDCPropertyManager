@@ -62,6 +62,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74u-no-atP">
+                                <rect key="frame" x="277" y="550" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="GFC-th-IY8" kind="show" id="QsE-8H-ZiJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -79,8 +86,10 @@
                             <constraint firstItem="BRa-iw-6yK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ned-3b-sVD"/>
                             <constraint firstItem="0rv-J6-BSS" firstAttribute="leading" secondItem="BRa-iw-6yK" secondAttribute="leading" id="SjU-Un-Dlz"/>
                             <constraint firstItem="43B-ST-JYE" firstAttribute="top" secondItem="Mhe-1C-9zt" secondAttribute="bottom" constant="38" id="asq-Qo-gKu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="74u-no-atP" secondAttribute="bottom" constant="20" id="crE-F4-MCv"/>
                             <constraint firstItem="K3l-ne-0nh" firstAttribute="leading" secondItem="BRa-iw-6yK" secondAttribute="leading" id="gOV-qc-dCn"/>
                             <constraint firstItem="Zr7-4q-W0v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jD6-FV-l0T"/>
+                            <constraint firstItem="74u-no-atP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kWe-Jh-S6F"/>
                             <constraint firstItem="pCR-aP-Gz1" firstAttribute="leading" secondItem="BRa-iw-6yK" secondAttribute="leading" id="qGc-uD-Ofn"/>
                             <constraint firstItem="BRa-iw-6yK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="sDp-Ti-GXt"/>
                             <constraint firstItem="K3l-ne-0nh" firstAttribute="top" secondItem="BRa-iw-6yK" secondAttribute="bottom" constant="20" id="tMc-q6-JKD"/>
@@ -97,7 +106,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="429"/>
+            <point key="canvasLocation" x="-71" y="423"/>
+        </scene>
+        <!--Controller1-->
+        <scene sceneID="k3C-V1-O8U">
+            <objects>
+                <viewController id="GFC-th-IY8" customClass="Controller1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s3E-Pn-frV"/>
+                        <viewControllerLayoutGuide type="bottom" id="vCr-dc-U5z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2dj-lj-tfK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NVt-ji-beZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="471" y="704"/>
         </scene>
     </scenes>
 </document>
